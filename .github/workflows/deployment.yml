@@ -22,7 +22,7 @@ jobs:
         username : ${{ secrets.DOCKER_USERNAME }}  # dockerhub username
         password : ${{ secrets.DOCKER_PASSWORD }}  # dockerhub access token
 
-    # build and push the backend image to dockerhub
+    # build and push the backend image to dockerhubs
     - name : Build and Push Backend
       uses : docker/build-push-action@v5
       with :
